@@ -1,0 +1,28 @@
+body{
+	height:9999px;
+}
+
+.bs-docs-sidenav.affix-top{
+	top:200px;
+	position:absolute;
+	
+}
+
+.bs-docs-sidenav.affix {
+    top: 0px;
+}
+.bs-docs-sidenav.affix-bottom {
+    bottom: 270px;
+    position: absolute;
+    top: auto;
+}
+
+.bs-docs-sidenav{
+	height:200px;
+	width:100px;
+	display:block;
+	background-color: red;
+	margin-top:0px;
+	top:200px;
+	
+}

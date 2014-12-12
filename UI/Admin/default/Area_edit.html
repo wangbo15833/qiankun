@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style" />
+</head>
+<body>
+<div id="tips" style="display:none;position:absolute;right:0px;color:red;"></div>
+<div class="container">
+    <form class="form-horizontal" action="__URL__/update" method="post">
+        <h4 class="form-signin-heading">编辑类目</h4>
+
+        <div class="control-group">
+            <label class="control-label" for="name">分类名称</label>
+            <div class="controls">
+                <input type="text" name="name" value="{$result['name']}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <label class="radio">
+                    <input type="radio" name="type" id="type1" value="1">
+                    行政区域
+                </label>
+                <label class="radio">
+                    <input type="radio" name="type" id="type2" value="2">
+                    商圈
+                </label>
+
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="hidden" name="id" value="{$result['id']}">
+                <input type="hidden" name='pid' value="{$result['id']|getAreaPid}">
+                <input type="submit" value="确定">
+                <input type="reset" value="重置">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        var type={$result['type']};
+        if(type==1) $("#type1").attr("checked","checked");
+        else if(type==2) $("#type2").attr("checked","checked");
+    });
+</script>
+</html>

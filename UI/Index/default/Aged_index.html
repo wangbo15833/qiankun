@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+    <include file="Pub:websocket"/>
+
+</head>
+<body onload="init();">
+<div class="container">
+    <form method="post" action="__GROUP__/OrdersAged/insert">
+        <h3>您想要什么?</h3>
+        <input name="info" type="text"/>
+        <input name='province' type="hidden" value="{$user['province']}"/>
+        <input name="city" type="hidden" value="{$user['city']}"/>
+        <input name="area" type="hidden" value="{$user['area']}"/>
+        <input name="address" type="hidden" value="{$user['address']}" />
+        <input name="point_x" type="hidden" value="111"/>
+        <input name="point_y" type="hidden" value="222"/>
+        <input name="phone" type="hidden" value="{$user['phone']}"/>
+        <input name="paytype" type="hidden" value="aged"/>
+        <input type="submit" value="发布"/>
+    </form>
+</div>
+</body>
+</html>

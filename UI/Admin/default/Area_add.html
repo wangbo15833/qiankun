@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style" />
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal" action="__URL__/insert" method="post">
+        <h4 class="form-signin-heading">添加类目</h4>
+
+        <div class="control-group">
+            <label class="control-label" for="name">区域名称</label>
+            <div class="controls">
+                <input type="text" name="name">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <label class="radio">
+                    <input type="radio" name="type" id="type1" value="1" checked>
+                    行政区域
+                </label>
+                <label class="radio">
+                    <input type="radio" name="type" id="type2" value="2">
+                    商圈
+                </label>
+
+            </div>
+        </div>
+
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="hidden" name='pid' value="{$pid}">
+                <input type="submit" value="确定">
+                <input type="reset" value="重置">
+            </div>
+        </div>
+
+
+    </form>
+</div>
+</body>
+</html>

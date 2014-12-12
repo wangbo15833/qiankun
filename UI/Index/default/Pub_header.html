@@ -1,0 +1,237 @@
+<div class="navbar navbar-default topnavbar" style="height:30px;min-height: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <ul class="list-inline" style="height:30px;line-height:30px;">
+                    <li><i class="glyphicon glyphicon-phone"></i><a href="#">我爱生活网手机版</a></li>
+                    <li><i class="glyphicon glyphicon-star"></i><a href="#">收藏我爱生活网</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-8">
+                <ul class="list-inline" style="height:30px;line-height:30px;float:right;">
+                    <if condition="$_SESSION[C('USER_AUTH_KEY')]">
+                        <li>您好，<a href="/User/Index/index">{$Think.session.loginUserName}</a></li>|
+                        <li><a href="/User/Public/logout">退出</a></li>|
+                        <else/>
+                        <li><a href="/User/Public/login">登录</a></li>|
+                        <li><a href="/User/Public/reg">注册</a></li>|
+
+                    </if>
+
+
+                    <li><a href="/Seller/Public/login">我是商家</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <h2 style="margin:0px;width:180px;float:left;">我爱生活网</h2>
+            <div style="float: left;">{$Think.cookie.area|getAreaName}<br/><a href="__GROUP__/City/index" style="font-size:12px;">[切换城市]</a></div>
+        </div>
+        <div class="col-xs-5">
+            <form>
+                <div class="input-group" style="width:350px;">
+                    <input type="text" class="form-control">
+                <span class="input-group-btn">
+                     <button class="btn btn-default" type="button">搜索</button>
+                </span>
+                </div><!-- /input-group -->
+            </form>
+        </div>
+        <div class="col-xs-3">
+            <ul class="promise-nav">
+                <li>
+                    <a class="anytime" href="#" target="blank">
+                        <div>随时退</div>
+                    </a>
+
+                </li>
+                <li>
+                    <a class="expired" href="#" target="blank">
+                        <div>过期自动退</div>
+                    </a>
+
+                </li>
+                <li>
+                    <a class="free" href="#" target="blank">
+                        <div>不满意免单</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main-navbar navbar navbar-style1" role="navigation" style="height:40px;min-height: 40px;margin-bottom: 0px;margin-top:20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3" style="float:left;position:relative" id="all-category">
+                <a style="height:39px;line-height: 39px;display: block;color: #FFF;font-size: 14px;font-weight: bold; padding-left:20px;text-decoration: none;"><span>全部分类</span></a>
+                <ul id="G_chan-panel" class="pop-panel pp_channels Fix" style="position:absolute; visibility:visible;z-index:1001;top:39px;left:0px;">
+                    <li class="root-item ">
+                        <a href="__GROUP__/Goods/index/category_id/1" class="root-name"><span>美食</span></a>
+                        <div class="hot-item">
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="1">
+                                    <eq name="vo.is_in_left" value="1">
+                                        <a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a>
+                                    </eq>
+                                </eq>
+
+                            </volist>
+                        </div>
+                        <ul class="pop-panel Fix sub-list">
+                            <li class="main-cate">美食</li>
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="1">
+                                    <li><a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a></li>
+                                </eq>
+
+                            </volist>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="root-item">
+                        <a href="__GROUP__/Goods/index/category_id/2" class="root-name"><span>休闲娱乐</span></a>
+                        <div class="hot-item">
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="2">
+                                    <eq name="vo.is_in_left" value="1">
+                                        <a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a>
+                                    </eq>
+                                </eq>
+
+                            </volist>
+                        </div>
+                        <ul class="pop-panel Fix sub-list">
+                            <li class="main-cate">休闲娱乐</li>
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="1">
+                                    <li><a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a></li>
+                                </eq>
+
+                            </volist>
+                        </ul>
+                    </li>
+
+                    <li class="root-item">
+                        <a href="__GROUP__/Goods/index/category_id/3" class="root-name"><span>酒店</span></a>
+                        <div class="hot-item">
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="3">
+                                    <eq name="vo.is_in_left" value="1">
+                                        <a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a>
+                                    </eq>
+                                </eq>
+
+                            </volist>
+                        </div>
+                        <ul class="pop-panel Fix sub-list">
+                            <li class="main-cate">酒店</li>
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="1">
+                                    <li><a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a></li>
+                                </eq>
+
+                            </volist>
+                        </ul>
+                    </li>
+
+                    <li class="root-item">
+                        <a href="__GROUP__/Goods/index/category_id/4" class="root-name"><span>丽人</span></a>
+                        <div class="hot-item">
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="4">
+                                    <eq name="vo.is_in_left" value="1">
+                                        <a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a>
+                                    </eq>
+                                </eq>
+
+                            </volist>
+                        </div>
+                        <ul class="pop-panel Fix sub-list">
+                            <li class="main-cate">丽人</li>
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="1">
+                                    <li><a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a></li>
+                                </eq>
+
+                            </volist>
+                        </ul>
+                    </li>
+
+                    <li class="root-item">
+                        <a href="__GROUP__/Goods/index/category_id/5" class="root-name"><span>购物</span></a>
+                        <div class="hot-item">
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="5">
+                                    <eq name="vo.is_in_left" value="1">
+                                        <a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a>
+                                    </eq>
+                                </eq>
+
+                            </volist>
+                        </div>
+                        <ul class="pop-panel Fix sub-list">
+                            <li class="main-cate">购物</li>
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="1">
+                                    <li><a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a></li>
+                                </eq>
+
+                            </volist>
+                        </ul>
+                    </li>
+
+                    <li class="root-item"> <a href="__GROUP__/Goods/index/category_id/6" class="root-name"><span>旅游</span></a>
+                        <ul class="pop-panel Fix sub-list">
+                            <li class="main-cate">旅游</li>
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="1">
+                                    <li><a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a></li>
+                                </eq>
+
+                            </volist>
+                        </ul>
+                    </li>
+
+                    <li class="root-item">
+                        <a href="__GROUP__/Goods/index/category_id/7" class="root-name"><span>生活服务</span></a>
+                        <div class="hot-item">
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="7">
+                                    <eq name="vo.is_in_left" value="1">
+                                        <a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a>
+                                    </eq>
+                                </eq>
+
+                            </volist>
+                        </div>
+                        <ul class="pop-panel Fix sub-list">
+                            <li class="main-cate">生活服务</li>
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo.pid" value="1">
+                                    <li><a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a></li>
+                                </eq>
+
+                            </volist>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="{:C('DOMAIN_NAME')}"><span>首页</span></a></li>
+                <li><a href="#"><span>今日新单</span></a></li>
+                <li><a href="#"><span>购物</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

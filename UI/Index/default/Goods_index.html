@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#G_chan-panel').delegate("li", "mouseenter", function () { $(this).addClass("active") });
+            $('#G_chan-panel').delegate("li", "mouseleave", function () { $(this).removeClass("active") });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#G_chan-panel').css({visibility:'hidden'});
+            $('.zjll').affix({
+                offset: {
+                    top: 1330,
+                    bottom: function () {
+                        return (this.bottom = $('.footer').outerHeight(true))
+                    }
+                }
+            });
+            $('#all-category').mouseover(function(){
+                $('#G_chan-panel').css({visibility:'visible'})
+            });
+
+            $('#all-category').mouseout(function(){
+                $('#G_chan-panel').css({visibility:'hidden'})
+            });
+        });
+    </script>
+
+</head>
+<body>
+<include file="Pub:header"/>
+<div class="container" >
+    <div class="row" style="background-color: #FFFFFF;">
+
+            <ul class="nav nav-pills nav-stacked location" role="tablist">
+                <li>
+                    <dl class="dl-horizontal">
+                        <dt style="width:auto;font-size:12px;color: #999;font-weight:normal">
+                            <i class="glyphicon glyphicon-fire"></i>
+                            分类
+                        </dt>
+                        <dd style="margin-left:60px;font-size:12px;">
+                            <a href="{$goods_category_all}">全部</a>
+                            <volist name="goods_category_list_bypid" id="vo">
+                                <a href="{$vo.url}">{$vo.name}</a>&nbsp;&nbsp;
+                            </volist>
+
+                        </dd>
+                    </dl>
+                </li>
+
+                <li>
+                    <dl class="dl-horizontal">
+                        <dt style="width:auto;font-size:12px;color: #999;font-weight:normal">
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            区县
+                        </dt>
+                        <dd style="margin-left:60px;font-size:12px;">
+                            <a href="{$area_all}">全部</a>
+                            <volist name="areas" id="vo">
+                                <eq name="vo.type" value="1">
+                                    <a href="{$vo.url}">{$vo.name}</a>
+                                </eq>
+                            </volist>
+
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+
+    </div>
+</div>
+<div class="container">
+<div class="row" style="background-color: #FFFFFF;">
+<div class="col-xs-9" style=" position:relative">
+<!--美食floor start-->
+<div class="floor-item">
+    <nav class="navbar navbar-default" style="margin-bottom: 0px;">
+        <ul class="filter-sortbar nav navbar-nav">
+            <li><a><span>默认排序</span></a></li>
+            <li><a><span>销量</span>&nbsp;<i class="glyphicon glyphicon-arrow-down"></i></a></li>
+            <li><a><span>价格</span>&nbsp;<i class="glyphicon glyphicon-arrow-down"></i></a></li>
+            <li><a><span>好评</span>&nbsp;<i class="glyphicon glyphicon-arrow-down"></i></a></li>
+            <li><a><span>发布时间</span>&nbsp;<i class="glyphicon glyphicon-arrow-down"></i></a></li>
+        </ul>
+    </nav>
+
+
+    <ul class="goods-list">
+        <volist name="goods" id="vo">
+            <li class="thumbnail">
+                <img src="/UI/Index/default/images/thumb.jpg" alt="...">
+                <div class="caption">
+                    <h4>{$vo.name}</h4>
+                    <h5>[{$vo.area}]仅售34元，价值43元牛肉面+鱼香茄子+奶</h5>
+                    <h3>¥<em>{$vo.new_price}</em></h3>
+                    <h6>¥<em>{$vo.old_price}</em></h6>
+                </div>
+            </li>
+        </volist>
+    </ul>
+
+
+
+</div><!--美食floor end-->
+    <nav class="myPageNav">
+        {$page}
+    </nav>
+
+
+</div>
+
+<!--右侧边栏start-->
+<div class="col-xs-3" style="padding-right:0px;">
+    <img src="{:$Theme['T']['root']}/images/ljxz.jpg"/>
+    <img src="{:$Theme['T']['root']}/images/qrcode_for_gh_c984b08f72d1_258.jpg" style="width:225px;margin-top:15px;margin-bottom:15px;"/>
+    <div class="panel panel-default">
+        <div class="panel-heading"><i class="glyphicon glyphicon-thumbs-up"></i>&nbsp;&nbsp;热门推荐</div>
+        <div class="panel-body">
+            <a href="#" sytle="display:block;">
+                <div class="hot-text" style="position:absolute;">
+                    <h4 style="font-size:18px;color:#333;font-weight:bold;font-family:'Microsoft YaHei',arial,sans-serif;;">立减专区</h4>
+                </div>
+                <img src="{:$Theme['T']['root']}/images/ljzq_bg.jpg" style="float:right;" />
+
+            </a>
+        </div>
+
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading"><i class="glyphicon glyphicon-gift"></i>&nbsp;&nbsp;幸运抽奖</div>
+        <div class="panel-body" style="padding:0px;">
+            <ul class="list-group" style="margin-bottom:0px;">
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Cras sit amet nibh libero</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default" style="margin-bottom:0px;">
+        <div class="panel-heading">意见反馈</div>
+        <div class="panel-body">
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="{:$Theme['T']['root']}/images/book.585f5b9468191673046dd3fcadefb318.png" alt="...">
+                </a>
+                <div class="media-body">
+                    <h5 class="media-heading">我们希望听到你的声音</h5>
+                    <a href="#">提交意见反馈?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">商务合作</div>
+        <div class="panel-body">
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="{:$Theme['T']['root']}/images/business.d11280aba03da3ad5dae654606dac241.png" alt="...">
+                </a>
+                <div class="media-body">
+                    <h5 class="media-heading">希望与我们合作吗？</h5>
+                    <a href="#">提交需求?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default zjll">
+        <div class="panel-heading">最近浏览</div>
+        <div class="panel-body">
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img src="{:$Theme['T']['root']}/images/business.d11280aba03da3ad5dae654606dac241.png" alt="...">
+                </a>
+                <div class="media-body">
+                    <h5 class="media-heading">希望与我们合作吗？</h5>
+                    <a href="#">提交需求?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div><!--右侧边栏end-->
+</div>
+</div>
+<include file="Pub:footer"/>
+</body>
+</html>

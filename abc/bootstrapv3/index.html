@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/mycss.css" rel="stylesheet" media="screen">
+
+    </head>
+    <body>
+    <h1 class="bs-docs-sidenav">Hello, world!</h1>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	
+		$(".bs-docs-sidenav").affix({
+			offset:{
+				top:100,
+                bottom:function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
+			}
+		
+		});
+	
+	
+	</script>
+    </body>
+    </html>

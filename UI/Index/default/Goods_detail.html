@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#G_chan-panel').delegate("li", "mouseenter", function () {
+                $(this).addClass("active")
+            });
+            $('#G_chan-panel').delegate("li", "mouseleave", function () {
+                $(this).removeClass("active")
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#G_chan-panel').css({visibility: 'hidden'});
+            $('.zjll').affix({
+                offset: {
+                    top: 1330,
+                    bottom: function () {
+                        return (this.bottom = $('.footer').outerHeight(true))
+                    }
+                }
+            });
+
+            $('#switch-box').affix({
+                offset:{
+                    top:600
+                }
+            });
+            $('body').scrollspy({ target: '.switch-box',offset:45 })
+
+            $('#all-category').mouseover(function () {
+                $('#G_chan-panel').css({visibility: 'visible'})
+            });
+
+            $('#all-category').mouseout(function () {
+                $('#G_chan-panel').css({visibility: 'hidden'})
+            });
+
+            $('#favorite').click(function(){
+                var goodsid={$result['id']};
+                $.ajax({
+                    url: "{:U('Index/GoodsFavorite/insert')}",
+                    type:'get',
+                    dataType:'json',
+                    data:{goodsid:goodsid},
+                    success:function(data){
+                        if(data.error == 0){
+                            alert("收藏成功!");
+                        }
+                    }
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+<include file="Pub:header"/>
+<div class="container">
+    <div class="row" style="background-color: #FFFFFF;padding-bottom: 30px;">
+
+        <div class="col-xs-6" style="">
+            <div class="thumbnail" style="border: none;">
+                <img src="{:$Theme['P']['root']}/images/nopicture.jpg" style="margin-top:20px;"/>
+                <a href="javascript:;" id="favorite">收藏这单</a><a href="#">分享到</a>
+            </div>
+
+        </div>
+        <div class="col-xs-6">
+            <h3>[多商区] 涂鸦烘焙</h3>
+
+            <p>仅售19.9元，价值45元DIY饼干/蛋糕2选1，与爱你的人，一起制作属于你们的甜点吧！</p>
+
+            <div class="price-wrap">
+                <h3 class="price">
+                    <span class="price-display"><em>&#165;</em>19.9</span>
+                    <span class="discount">
+                        <span class="price-discount">4.4<em>折</em></span>
+                        <span class="price-original">价值&nbsp;<em>&#165;</em>45</span>
+                    </span>
+                </h3>
+
+                <div class="Hide Toe-promo-box">
+                    <span class="J_notice_toe" style="z-index: 1">
+                        <em>返现1%</em>
+                    </span>
+
+                </div>
+                <i></i>
+            </div>
+            <div class="action-box">
+                <table class="action-blk">
+                    <tr>
+                        <td>
+                            <div class="action-info">
+                                <span>已售<em class="J_current_join">5604</em>份</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="action-info">
+                                <span class="deal-comments">
+                                    <span class="yellowstar45 star-icon"></span>
+                                    <span class="star-rate">4.4</span>
+                                </span>
+                                <span>
+                                    <a href="#" class="comments-count J_main_comment_jump" track="|1|module#5_tab_info,type#dp_rate,action#click,dealgrp_id#8227815,test#">624</a>条团购评价
+                                </span>
+                                <span>
+                                    <a href="#" class="comments-count J_site_comment_jump" track="|1|module#5_tab_info,type#dp_review,action#click,dealgrp_id#8227815,test#">1013</a>条商户评价
+                                </span>
+                            </div>
+                        </td>
+                        <td class="last">
+                            <div class="action-info service-item" xmlns="http://www.w3.org/1999/html">
+                                <span class="refund">
+                                    <a target="_blank" href="/promise" track="dp_tg_deal_refund" rel="nofollow">
+                                    <i></i>
+                                    <span>支持随时退</span>
+                                    </a>
+                                </span>
+                                <span class="expired">
+                                    <a target="_blank" href="/promise" track="dp_tg_deal_refund" rel="nofollow">
+                                        <i></i>
+                                        <span>过期自动退</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="validate-date">
+                <span>有效期：至2015-2-13</span>
+            </div>
+
+            <div class="quantity Fix">
+                <span class="tit">数量：</span>
+                <div class="counter J_counter" data-eval-config="{&quot;min&quot;:1,&quot;max&quot;:0,&quot;default&quot;:1,&quot;limit&quot;:true}">
+                    <a class="minus minus-dis" href="#"><i></i></a>
+                    <input class="num" value="">
+                    <a class="plus" href="#"><i></i></a>
+                </div>
+            </div><br/>
+            <a type="button" class="btn btn-warning btn-lg" href="__GROUP__/Goods/buy/id/{$result['id']}">马上订购</a>
+
+        </div>
+    </div>
+    <div class="row" style="margin-top:20px;">
+        <div class="col-xs-9">
+            <div class="row switch-box" id="switch-box">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#section1">门店</a></li>
+                    <li class=""><a href="#dgxq">订购详情</a></li>
+                    <li class=""><a href="#gmxz">购买须知</a></li>
+                    <li class=""><a href="#hypj">会员评价</a></li>
+                </ul>
+            </div>
+            <div class="row box-con">
+                <div style="width:100%;height:200px" id="section1">
+
+                </div>
+                <section id="dgxq" style="padding-top:40px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">订购详情</div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </section>
+
+                <section id="gmxz" style="padding-top:40px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">购买须知</div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </section>
+
+                <section id="hypj" style="padding-top:40px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">会员评价</div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </section>
+
+
+
+            </div>
+
+        </div>
+        <div class="col-xs-3" style="padding-right:0px;">
+            <include file="Pub:sidebar1"/>
+            <include file="Pub:sidebar2"/>
+        </div>
+    </div>
+</div>
+<include file="Pub:footer"/>
+</body>
+</html>

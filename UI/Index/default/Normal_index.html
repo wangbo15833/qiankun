@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style" />
+    <load href="{:$Theme['T']['root']}css/zsucai.css"/>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#G_chan-panel').delegate("li", "mouseenter", function () { $(this).addClass("active") });
+            $('#G_chan-panel').delegate("li", "mouseleave", function () { $(this).removeClass("active") });
+        });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+     $('.zjll').affix({
+          offset: {
+            top: 1700,
+            bottom: function () {
+              return (this.bottom = $('.footer').outerHeight(true))
+            }
+          }
+        })
+       }); 
+    </script>
+
+</head>
+<body>
+<include file="Pub:header"/>
+<div class="container" >
+    <div class="row" style="background-color: #FFFFFF;">
+
+        <div class="col-xs-9" style="float:right;overflow: hidden;padding-right:0px;">
+            <ul class="nav nav-pills nav-stacked location" role="tablist">
+                <li>
+                    <dl class="dl-horizontal">
+                        <dt style="width:auto;font-size:12px;color: #999;font-weight:normal">
+                            <i class="glyphicon glyphicon-fire"></i>
+                            热门分类
+                        </dt>
+                        <dd style="margin-left:90px;font-size:12px;">
+                            <volist name="goods_category_list" id="vo">
+                                <eq name="vo['is_hot']" value="1">
+                                    <a href="__GROUP__/Goods/index/category_id/{$vo.id}">{$vo.name}</a>
+                                </eq>
+
+                            </volist>
+
+                        </dd>
+                    </dl>
+                </li>
+
+                <li>
+                    <dl class="dl-horizontal">
+                        <dt style="width:auto;font-size:12px;color: #999;font-weight:normal">
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            全部区域
+                        </dt>
+                        <dd style="margin-left:90px;font-size:12px;">
+                            <volist name="area_list" id="vo">
+                                <eq name="vo['type']" value="1">
+                                    <a href="__GROUP__/Goods/index/area/{$vo.id}">{$vo.name}</a>
+                                </eq>
+
+                            </volist>
+
+                        </dd>
+                    </dl>
+                </li>
+
+                <li>
+                    <dl class="dl-horizontal">
+                        <dt style="width:auto;font-size:12px;color: #999;font-weight:normal">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                            热门商区
+                        </dt>
+                        <dd style="margin-left:90px;font-size:12px;">
+                            <volist name="area_list" id="vo">
+                                <eq name="vo['type']" value="2">
+                                    <a href="__GROUP__/Goods/index/area/{$vo.id}">{$vo.name}</a>
+                                </eq>
+
+                            </volist>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+
+            <!-- 三图轮播代码 开始 -->
+            <div class="wrapper top-main clearfix">
+                <div class="main tab mt15">
+                    <!--切换图片-->
+                    <div class="slide">
+                        <ul id="bigSlideUl" class="slide-ul clearfix">
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" src="/UI/Index/default/images/1369383598982.jpg" alt="可爱的手机壁纸下载" />
+                                    <span class="pic-txt">可爱的手机壁纸下载(11张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" src="/UI/Index/default/images/1353485118249.jpg" alt="清纯非主流美女高清壁纸" />
+                                    <span class="pic-txt">清纯非主流美女高清壁(10张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" src="/UI/Index/default/images/1355218285736.jpg" alt="精选唯美风景手机壁纸" />
+                                    <span class="pic-txt">精选唯美风景手机壁纸(5张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1355742153253.jpg" alt="最新热门美女写真高清壁纸" />
+                                    <span class="pic-txt">最新热门美女写真高清(7张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1355468691609.jpg" alt="最新海贼王可爱动漫iPhone壁纸" />
+                                    <span class="pic-txt">最新海贼王可爱动漫i(8张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1354614801743.jpg" alt="卡通Q版手机壁纸" />
+                                    <span class="pic-txt">卡通Q版手机壁纸(8张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1372402137127.jpg" alt="经典动漫海贼王手机壁纸" />
+                                    <span class="pic-txt">经典动漫海贼王手机壁(10张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1370761386641.jpg" alt="文艺范高清卡通壁纸" />
+                                    <span class="pic-txt">文艺范高清卡通壁纸(11张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1372038703930.jpg" alt="小时代电影精美壁纸" />
+                                    <span class="pic-txt">小时代电影精美壁纸(15张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/137170892289.jpg" alt="可爱杨幂高清手机壁纸" />
+                                    <span class="pic-txt">可爱杨幂高清手机壁纸(13张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/13691345082.jpg" alt="可爱Q版海贼王one piece主题iPhone手机壁纸" />
+                                    <span class="pic-txt">可爱Q版海贼王one pi(10张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1368518565890.jpg" alt="安卓手机高清壁纸推荐" />
+                                    <span class="pic-txt">安卓手机高清壁纸推荐(11张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1368179008600.jpg" alt="潮人必备酷炫的美景壁纸" />
+                                    <span class="pic-txt">潮人必备酷炫的美景壁(15张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/136817468750.jpg" alt="高清美女安卓手机壁纸" />
+                                    <span class="pic-txt">高清美女安卓手机壁纸(11张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1367837316329.jpg" alt="非主流黑色背景文字手机壁纸" />
+                                    <span class="pic-txt">非主流黑色背景文字手(12张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1367138383721.jpg" alt="阳光下的美女手机壁纸图集" />
+                                    <span class="pic-txt">阳光下的美女手机壁纸(15张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1367062477163.jpg" alt="湖人高清手机壁纸下载" />
+                                    <span class="pic-txt">湖人高清手机壁纸下载(10张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1366770146652.jpg" alt="温馨笑容的美女手机壁纸" />
+                                    <span class="pic-txt">温馨笑容的美女手机壁(17张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1366622282843.jpg" alt="送给女孩的26个字母壁纸" />
+                                    <span class="pic-txt">送给女孩的26个字母壁(26张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1366375916978.png" alt="修丢丢十二星座卡通手机壁纸" />
+                                    <span class="pic-txt">修丢丢十二星座卡通手(12张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1364438734241.png" alt="三星Galaxy S4超漂亮全高清官方手机壁纸" />
+                                    <span class="pic-txt">三星Galaxy S4超漂亮(10张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1364279216643.jpg" alt="Showgirl人气萌主周嘉琪iphone壁纸" />
+                                    <span class="pic-txt">Showgirl人气萌主周嘉(10张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1363943359756.jpg" alt="唯美的氛围手机壁纸" />
+                                    <span class="pic-txt">唯美的氛围手机壁纸(11张)</span> </a></li>
+                            <li>
+                                <a target="_blank" class="picimglink" href="http://www.lanrentuku.com/">
+                                    <img width="230" height="350" srch="/UI/Index/default/images/1363867851540.jpg" alt="阳光下的美景手机壁纸下载" />
+                                    <span class="pic-txt">懒人图库搜集整理</span> </a></li>
+                        </ul>
+                    </div>
+                    <!--slide 切换按钮-->
+                    <ul id="smallSlideUl" class="info-btn clearfix">
+                        <li class="info-cur" id="mypic0" sid="0"><span>1</span></li>
+                        <li id="mypic1" sid="1"><span>2</span></li>
+                        <li id="mypic2" sid="2"><span>3</span></li>
+                        <li id="mypic3" sid="3"><span>4</span></li>
+                        <li id="mypic4" sid="4"><span>5</span></li>
+                        <li id="mypic5" sid="5"><span>6</span></li>
+                        <li id="mypic6" sid="6"><span>7</span></li>
+                        <li id="mypic7" sid="7"><span>8</span></li>
+                    </ul>
+                    <em class="tab-shadow"></em></div>
+
+            </div>
+            <load href="{:$Theme['T']['root']}js/zsucai.js"/>
+
+            <!-- 三图轮播代码 结束 -->
+
+
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top:20px;">
+    <div class="row" style="background-color: #FFFFFF;">
+        <div class="col-xs-9" style="position:relative;">
+
+        <!--美食floor start-->
+        <div class="floor-item">
+            <h3>美食</h3>
+
+            <ul class="floor-link">
+                <volist name="goods_category_list" id="vo">
+                    <eq name="vo.pid" value="1">
+                        <eq name="vo.is_floor" value="1">
+                            <li>
+                                <a href="__GROUP__/Goods/index/category_id/{$vo.id}" target="_blank">{$vo.name}</a>
+                            </li>
+                        </eq>
+                    </eq>
+                </volist>
+                <li class="more">
+                    <a href="__GROUP__/Goods/index/category_id/1" target="_blank">查看全部>></a>
+                </li>
+            </ul>
+
+            <ul class="goods-list">
+                <volist name="goods_list_meishi" id="vo" length='4' offset='0'>
+                    <li class="thumbnail">
+                        <a href="__GROUP__/Goods/detail/id/{$vo.id}"><img src="/Upload/Seller/{$vo.thumb_img}" alt="..."></a>
+                        <div class="caption">
+                            <a href="__GROUP__/Goods/detail/id/{$vo.id}"><h4>{$vo.name}</h4></a>
+                            <h5>[{$vo.area|getAreaName}]仅售34元，价值43元牛肉面+鱼香茄子+奶</h5>
+                            <h3>¥<em>{$vo.new_price}</em></h3>
+                            <h6>¥<em>{$vo.old_price}</em></h6>
+                        </div>
+                    </li>
+                </volist>
+
+            </ul>
+            <a class="floor-more" target="_blank" href="__GROUP__/Goods/index/category_id/1">
+                <span>查看全部美食»</span>
+            </a>
+        </div><!--美食floor end-->
+
+        <!--休闲娱乐floor start-->
+        <div class="floor-item">
+            <h3>休闲娱乐</h3>
+
+            <ul class="floor-link">
+                <volist name="goods_category_list" id="vo">
+                    <eq name="vo.pid" value="1">
+                        <eq name="vo.is_floor" value="1">
+                            <li>
+                                <a href="__GROUP__/Goods/index/category_id/{$vo.id}" target="_blank">{$vo.name}</a>
+                            </li>
+                        </eq>
+                    </eq>
+                </volist>
+                <li class="more">
+                    <a href="__GROUP__/Goods/index/category_id/1" target="_blank">查看全部>></a>
+                </li>
+            </ul>
+
+            <ul class="goods-list">
+                <volist name="goods_list_xxyl" id="vo" length='4' offset='0'>
+                    <li class="thumbnail">
+                        <a href="__GROUP__/Goods/detail/id/{$vo.id}"><img src="/Upload/Seller/{$vo.thumb_img}" alt="..."></a>
+                        <div class="caption">
+                            <a href="__GROUP__/Goods/detail/id/{$vo.id}"><h4>{$vo.name}</h4></a>
+                            <h5>[{$vo.area|getAreaName}]仅售34元，价值43元牛肉面+鱼香茄子+奶</h5>
+                            <h3>¥<em>{$vo.new_price}</em></h3>
+                            <h6>¥<em>{$vo.old_price}</em></h6>
+                        </div>
+                    </li>
+                </volist>
+
+
+            </ul>
+            <a class="floor-more" target="_blank" href="/qinghuangdao/c/10">
+                <span>查看全部休闲娱乐»</span>
+            </a>
+        </div><!--休闲娱乐floor end-->
+
+        <!--酒店floor start-->
+        <div class="floor-item">
+            <h3>酒店</h3>
+
+            <ul class="floor-link">
+                <volist name="goods_category_list" id="vo">
+                    <eq name="vo.pid" value="1">
+                        <eq name="vo.is_floor" value="1">
+                            <li>
+                                <a href="__GROUP__/Goods/index/category_id/{$vo.id}" target="_blank">{$vo.name}</a>
+                            </li>
+                        </eq>
+                    </eq>
+                </volist>
+                <li class="more">
+                    <a href="__GROUP__/Goods/index/category_id/1" target="_blank">查看全部>></a>
+                </li>
+            </ul>
+
+            <ul class="goods-list">
+                <volist name="goods_list_jiudian" id="vo" length='4' offset='0'>
+                    <li class="thumbnail">
+                        <a href="__GROUP__/Goods/detail/id/{$vo.id}"><img src="/Upload/Seller/{$vo.thumb_img}" alt="..."></a>
+                        <div class="caption">
+                            <a href="__GROUP__/Goods/detail/id/{$vo.id}"><h4>{$vo.name}</h4></a>
+                            <h5>[{$vo.area|getAreaName}]仅售34元，价值43元牛肉面+鱼香茄子+奶</h5>
+                            <h3>¥<em>{$vo.new_price}</em></h3>
+                            <h6>¥<em>{$vo.old_price}</em></h6>
+                        </div>
+                    </li>
+                </volist>
+
+
+            </ul>
+            <a class="floor-more" target="_blank" href="/qinghuangdao/c/10">
+                <span>查看全部酒店»</span>
+            </a>
+        </div><!--酒店floor end-->
+
+        <!--生活服务floor start-->
+        <div class="floor-item">
+            <h3>生活服务</h3>
+
+            <ul class="floor-link">
+                <volist name="goods_category_list" id="vo">
+                    <eq name="vo.pid" value="1">
+                        <eq name="vo.is_floor" value="1">
+                            <li>
+                                <a href="__GROUP__/Goods/index/category_id/{$vo.id}" target="_blank">{$vo.name}</a>
+                            </li>
+                        </eq>
+                    </eq>
+                </volist>
+                <li class="more">
+                    <a href="__GROUP__/Goods/index/category_id/1" target="_blank">查看全部>></a>
+                </li>
+            </ul>
+
+            <ul class="goods-list">
+                <volist name="goods_list_shfw" id="vo" length='4' offset='0'>
+                    <li class="thumbnail">
+                        <a href="__GROUP__/Goods/detail/id/{$vo.id}"><img src="/Upload/Seller/{$vo.thumb_img}" alt="..."></a>
+                        <div class="caption">
+                            <a href="__GROUP__/Goods/detail/id/{$vo.id}"><h4>{$vo.name}</h4></a>
+                            <h5>[{$vo.area|getAreaName}]仅售34元，价值43元牛肉面+鱼香茄子+奶</h5>
+                            <h3>¥<em>{$vo.new_price}</em></h3>
+                            <h6>¥<em>{$vo.old_price}</em></h6>
+                        </div>
+                    </li>
+                </volist>
+
+
+            </ul>
+            <a class="floor-more" target="_blank" href="/qinghuangdao/c/10">
+                <span>查看全部生活服务»</span>
+            </a>
+        </div><!--生活服务floor end-->
+
+
+
+
+        </div>
+
+        <!--右侧边栏start-->
+        <div class="col-xs-3" style="padding-right:0px;padding-top:56px;">
+            <include file="Pub:sidebar1"/>
+            <div class="panel panel-default">
+                <div class="panel-heading"><i class="glyphicon glyphicon-thumbs-up"></i>&nbsp;&nbsp;热门推荐</div>
+                <div class="panel-body">
+                    <a href="#" sytle="display:block;">
+                        <div class="hot-text" style="position:absolute;">
+                            <h4 style="font-size:18px;color:#333;font-weight:bold;font-family:'Microsoft YaHei',arial,sans-serif;;">立减专区</h4>
+                        </div>
+                        <img src="{:$Theme['T']['root']}/images/ljzq_bg.jpg" style="float:right;" />
+
+                    </a>
+                </div>
+
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading"><i class="glyphicon glyphicon-gift"></i>&nbsp;&nbsp;幸运抽奖</div>
+                <div class="panel-body" style="padding:0px;">
+                    <ul class="list-group" style="margin-bottom:0px;">
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Cras sit amet nibh libero</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+            </div>
+
+            <include file="Pub:sidebar2"/>
+
+
+
+
+        </div><!--右侧边栏end-->
+    </div>
+</div>
+<include file="Pub:footer" />
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <include file="Pub:style"/>
+</head>
+<body>
+<table class="table table-striped">
+    <tr>
+        <td>订单号</td>
+        <td>商品名称</td>
+        <td>单价</td>
+        <td>数量</td>
+        <td>商品操作</td>
+        <td>实付款</td>
+        <td>时间</td>
+        <td>交易状态</td>
+        <td>付款类型</td>
+        <td>交易操作</td>
+    </tr>
+    <volist name="list" id="vo">
+        <tr>
+            <td>{$vo.orderid}</td>
+            <td>
+                <empty name="vo.name">{$vo.info}</empty>
+                <noempty name="vo.name">{$vo.name}</noempty></td>
+            <td>{$vo.price}</td>
+            <td>{$vo.num}</td>
+            <td>退款/退货</td>
+            <td>{$vo.amount}</td>
+            <td>{$vo.create_time|date="Y-m-d",###}</td>
+            <td>{$vo.status|getOrderStatusName}</td>
+            <td>{$vo.paytype|getPaytypeName}</td>
+            <td>
+                {$vo.OrderButton}
+            </td>
+        </tr>
+    </volist>
+</table>
+<div>{$page}</div>
+</body>
+</html>

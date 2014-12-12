@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+</head>
+<body>
+<div class="container">
+    <table class="table">
+        <tr>
+            <td>分类</td>
+            <td>{$shop['name']}</td>
+        </tr>
+        <tr>
+            <td>店名</td>
+            <td>{$shop['shopname']}</td>
+        </tr>
+        <tr>
+            <td>电话</td>
+            <td>{$shop['phone']}</td>
+        </tr>
+        <tr>
+            <td>省、市、县</td>
+            <td>{$shop['province']|getAreaName}{$shop['city']|getAreaName}{$shop['area']|getAreaName}</td>
+        </tr>
+        <tr>
+            <td>地址</td>
+            <td>{$shop['address']}</td>
+        </tr>
+        <tr>
+            <td>注册时间</td>
+            <td>{$shop['add_time']|date="Y-m-d",###}</td>
+        </tr>
+        <tr>
+            <td>上次修改时间</td>
+            <td>{$shop['update_time']|date="Y-m-d",###}</td>
+        </tr>
+        <tr>
+            <td><a class="btn" href="__URL__/edit/id/{$shop['id']}">修改资料</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

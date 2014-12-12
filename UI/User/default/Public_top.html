@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+    <base target="main" />
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">卖家中心</a>
+            <div class="nav-collapse collapse">
+                <p class="navbar-text pull-right">
+                    欢迎你！{$Think.session.loginUserName}|
+                    <a href="{:C('DOMAIN_NAME')}" target="_blank"><i class="icon-home"></i>网站首页</a>
+                    <a href="__URL__/password/"><img src="{:$Theme['T']['root']}images/checked_out.png" width="16" height="16" border="0" alt="" align="absmiddle"> 修改密码</a>
+                    <a href="__URL__/profile/"><img SRC="{:$Theme['T']['root']}images/write.gif" WIDTH="17" HEIGHT="16" BORDER="0" ALT="" align="absmiddle"> 修改资料</a>
+                    <a href="__URL__/logout/" target="_top"><img SRC="{:$Theme['T']['root']}images/error.gif" WIDTH="20" HEIGHT="20" BORDER="0" ALT="" align="absmiddle"> 退 出</a>
+                </p>
+
+                <ul class="nav">
+                    <li class="active"><a href="#">功能1</a></li>
+                    <li class="active"><a href="#">功能2</a></li>
+
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<!-- 头部区域 -->
+
+<script>
+    function sethighlight(n) {
+        var lis = document.getElementsByTagName('span');
+        for(var i = 0; i < lis.length; i++) {
+            lis[i].className = '';
+        }
+        lis[n].className = 'current';
+    }
+    sethighlight(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url: "{:U('Seller/Public/getAreaByPid')}",
+            type:'post',
+            dataType:'json',
+            data:{param_id:0},
+            success:function(data){
+                if(data.error == 0){
+                    data = data.areas;
+                    var count=data.length;
+                    var _str = '';
+                    for(j=0;j< count; j++){
+                        _str +='<option value="'+data[j].did+'"';
+                        if(data[j]['did'] == <?php echo $shop['province'];?>){
+                            _str += 'selected="selected"';
+                        }
+                        _str +='>'+data[j].dname+'</option>';
+                    }
+                    $('#province').append(_str);
+                }
+                var provinceid = $('#province').val();
+                $.ajax({
+                    url: "{:U('Seller/Public/getAreaByPid')}",
+                    type:'post',
+                    dataType:'json',
+                    data:{param_id:provinceid},
+                    success:function(data){
+                        if(data.error == 0){
+                            data = data.areas;
+                            var count=data.length;
+                            var _str = '';
+                            for(j=0;j< count; j++){
+                                _str +='<option value="'+data[j].did+'"';
+                                if(data[j]['did'] == <?php echo $shop['city'];?>){
+                                    _str += 'selected="selected"';
+                                }
+                                _str +='>'+data[j].dname+'</option>';
+                            }
+                            $('#city').append(_str);
+                        }
+                        var cityid =$('#city').val();
+
+                        $.ajax({
+                            url: "{:U('Seller/Public/getAreaByPid')}",
+                            type:'post',
+                            dataType:'json',
+                            data:{param_id:cityid},
+                            success:function(data){
+                                if(data.error == 0){
+                                    data = data.areas;
+                                    var count=data.length;
+                                    var _str = '';
+                                    for(j=0;j< count; j++){
+                                        _str +='<option value="'+data[j].did+'"';
+                                        if(data[j]['did'] == <?php echo $shop['area'];?>){
+                                            _str += 'selected="selected"';
+                                        }
+                                        _str +='>'+data[j].dname+'</option>';
+                                    }
+                                    $('#area').append(_str);
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+        $.ajax({
+            url: "{:U('Seller/Public/getShopCategoryList')}",
+            type:'post',
+            dataType:'json',
+            //data:{param_id:0},
+            success:function(data){
+                if(data.error == 0){
+                    data = data.list;
+                    var count=data.length;
+                    var _str = '';
+                    for(j=0;j< count; j++){
+                        _str +='<option value="'+data[j].id+'"';
+                        if(data[j]['id'] == <?php echo $shop['category_id'];?>){
+                            _str += 'selected="selected"';
+                        }
+                        _str +='>'+data[j].count+data[j].name+'</option>';
+                    }
+                    $('#category').append(_str);
+                }
+            }
+        });
+    });
+
+</script>

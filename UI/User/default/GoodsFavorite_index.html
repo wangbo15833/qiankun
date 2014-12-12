@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <include file="Pub:style"/>
+</head>
+<body>
+<table class="table table-striped">
+    <tr>
+        <td>ID</td>
+        <td>商品名称</td>
+        <td>原价</td>
+        <td>现价</td>
+        <td>添加时间</td>
+        <td>操作</td>
+    </tr>
+    <volist name="list" id="vo">
+        <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.name}</td>
+            <td>{$vo.old_price}</td>
+            <td>{$vo.new_price}</td>
+            <td>{$vo.add_time|date="Y-m-d",###}</td>
+            <td><a class="btn btn-primary" href="__URL__/foreverdelete/id/{$vo.id}">删除</a></td>
+
+        </tr>
+    </volist>
+</table>
+<div>{$page}</div>
+</body>
+</html>

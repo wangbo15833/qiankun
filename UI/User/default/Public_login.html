@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+    <style>
+        body {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+    </style>
+    <script>
+        function fleshVerify(){
+            //重载验证码
+            var timenow = new Date().getTime();
+            document.getElementById("verifyImg").src= '__URL__/verify/'+timenow;
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <form class="form-signin" action="__URL__/checkLogin" method="post">
+        <h2 class="form-signin-heading">请登录</h2>
+        <input name="user" type="text" class="input-block-level" placeholder="手机/用户名">
+        <input name="pass" type="password" class="input-block-level" placeholder="密码">
+        <input name="verify" type="text" class="input-block-level" placeholder="请输入验证码">
+        <img id="verifyImg" src="__URL__/verify" onClick="fleshVerify()" BORDER="0" ALT="点击刷新验证码" style="cursor:pointer" align="absmiddle">
+        <br/>
+        <br/>
+        
+        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+    </form>
+
+</div> <!-- /container -->
+
+</body>
+</html>

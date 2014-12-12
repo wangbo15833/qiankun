@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+    <style>
+        body{
+            postion:relative;
+        }
+        #item1{
+
+
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
+
+</head>
+<body>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" id="item1">
+            <img class="pull-right" src="{:$Theme['T']['root']}images/original.png" alt="..." style="height:520px">
+
+        </div>
+        <div class="item" id="item2">
+            <img class="pull-right" src="{:$Theme['T']['root']}images/img1.png" alt="..." style="height:520px">
+
+        </div>
+
+        <div class="item" id="item3">
+            <img class="pull-right" src="{:$Theme['T']['root']}images/img2.png" alt="..." style="height:520px">
+
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div style="position:absolute;top:200px;left:300px";>
+    <a class="btn btn-primary btn-lg" href="__GROUP__/Aged/index">老年人模式</a>
+    <a class="btn btn-success btn-lg" href="__GROUP__/Normal/index">正常模式</a>
+</div>
+</body>
+</html>

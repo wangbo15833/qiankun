@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+    <style>
+        html{overflow-x : hidden;}
+    </style>
+    <base target="main" />
+</head>
+
+<body >
+
+<div class="sidebar-nav">
+    <ul class="nav nav-tabs nav-stacked">
+        <volist id="item" name="menu" >
+                <neq name="item['name']|strtolower" value="public" >
+                    <neq name="item['name']|strtolower" value="index" >
+                        <eq name="item['access']" value="1" >
+                            <li><a href="__GROUP__/{$item['name']}/index/" id="{$key}" target="main">{$item['title']}</a></li>
+                        </eq>
+                    </neq>
+                </neq>
+        </volist>
+    </ul>
+</div>
+
+<script language="JavaScript">
+    function refreshMainFrame(url)
+    {
+        parent.main.document.location = url;
+    }
+
+    if (document.getElementsByTagName("a")[0].href)
+    {
+        refreshMainFrame(document.getElementsByTagName("a")[0].href);
+    }
+
+</script>
+</body>
+</html>

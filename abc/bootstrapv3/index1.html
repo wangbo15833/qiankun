@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/mycss.css" rel="stylesheet" media="screen">
+
+    </head>
+    <body data-spy="scroll" data-target=".bs-docs-sidena" >
+    <h1 class="bs-docs-sidenav">Hello, world!</h1>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		setTimeout(function(){
+			$(".bs-docs-sidenav").affix({
+			offset:{
+				top:200
+			}
+		
+		})
+
+		},100)
+	});
+	</script>
+    </body>
+    </html>

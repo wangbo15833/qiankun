@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <load href="{:$Theme['P']['root']}/bootstrapv3/css/bootstrap.css"/>
+    <load href="{:$Theme['P']['root']}/js/jquery.js"/>
+    <load href="{:$Theme['P']['root']}/bootstrap-star-rating-master/css/star-rating.css"/>
+    <load href="{:$Theme['P']['root']}/bootstrap-star-rating-master/js/star-rating.js"/>
+    <script>
+        jQuery(document).ready(function () {
+            $(".rating-kv").rating();
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal" action="__URL__/insert" method="post">
+        <h4 class="form-signin-heading">店铺评价</h4>
+        <div class="control-group">
+            <label class="control-label" for="info">评价内容</label>
+            <div class="controls">
+                <textarea name="info" id="info"></textarea>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="starlevel">评分</label>
+            <div class="controls">
+                <input id="starlevel" value="0" type="number" class="rating-kv" min=0 max=5 step=0.5 data-size="xs" name="starlevel">
+
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="hidden" name="orderid" id="orderid" value="{$orderid}" />
+                <input type="submit" value="确定">
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

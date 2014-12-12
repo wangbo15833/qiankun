@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style" />
+    <load href="{:$Theme['P']['root']}/js/Base.js"/>
+    <load href="{:$Theme['P']['root']}/js/prototype.js"/>
+    <load href="{:$Theme['P']['root']}/js/mootools.js"/>
+    <load href="{:$Theme['P']['root']}/js/Think/ThinkAjax.js"/>
+    <script type="text/javascript">
+
+
+    </script>
+
+</head>
+<body>
+<div class="tips"></div>
+
+<div class="navbar navbar-default topnavbar" style="height:30px;min-height: 30px;">
+    <div class="container">
+        <div class="row">
+            <ul class="list-inline" style="height:30px;line-height:30px; margin-left:0px;">
+                <li>您好，<a href="/User/Index/index">{$Think.session.loginUserName}</a></li>|
+                <li><a href="/User/Public/logout">退出</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-4">
+            <h2 style="margin:0px;width:180px;float:left;">我爱生活网</h2>
+
+        </div>
+        <div class="col-xs-8" style="padding-top:10px;">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="66.7" aria-valuemin="0" aria-valuemax="100" style="width: 66.7%;">
+                    第二步
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-9">
+            <form method="post" id="form1" action="__URL__/insert">
+                <input type="hidden" name="orderid" value="{$orderID}"/>
+                <input type="hidden" name="shopid" value="{$goods.shopid}"/>
+                <input type="hidden" name="goodsid" value="{$goods.id}"/>
+                <input type="hidden" name="price" value="{$goods.new_price}"/>
+                <input type="hidden" name="num" value="{$Think.cookie.goods_num}"/>
+                <input type="hidden" name="amount" value="{$amount}"/>
+                <input type="hidden" name="address" value="一个地方"/>
+                <h3>选择支付方式</h3>
+                <p><strong>应付总额：</strong><span>¥985.00</span></p>
+                <div>
+                    <input type="radio" name="paytype" checked value="hdfk">货到付款
+                    <input type="radio" name="paytype"  value="alipay">支付宝
+
+                </div>
+                <h3>确认订单</h3>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>商品名称</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th>总计</th>
+                    </tr>
+                    <tr>
+                        <td>仅售985元，价值1150元会员卡！无需预约，免费打包！</td>
+                        <td>¥985</td>
+                        <td>1</td>
+                        <td>¥985</td>
+                    </tr>
+                </table>
+                <input type="button" value="提交订单" id="payOrder" class="save imgButton">
+                <!--input type="submit" value="确认订单，付款"-->
+            </form>
+        </div>
+        <div class="col-xs-3">
+
+        </div>
+    </div>
+</div>
+<include file="Pub:footer"/>
+</body>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('#payOrder').click(function(){
+            var paytype=jQuery('input:radio[name=paytype]:checked').val();
+            if(paytype=="hdfk"){
+                ThinkAjax.sendForm('form1','__URL__/insert/',jQuery.doPay,'tips');
+            }
+            else{
+                alert('其他付款方式');
+            }
+
+        });
+    });
+
+    jQuery.doPay=function(){
+        alert('回到用户中心查看订单');
+        window.location.href="/User/Index/index";
+    }
+</script>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+    <load href="{:$Theme['P']['root']}/js/editor/kindeditor.js"/>
+
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal" action="__URL__/insert" method="post" enctype="multipart/form-data">
+        <h4 class="form-signin-heading">商品添加</h4>
+
+        <div class="control-group">
+            <label class="control-label" for="category">站内类目</label>
+            <div class="controls">
+                <select id="category" name="category_id"></select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="name">商品名称</label>
+            <div class="controls">
+                <input type="text" name="name" id="name">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="sub_title">副标题</label>
+            <div class="controls">
+                <textarea name="sub_title" id="sub_title"></textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">店内分类</label>
+            <div class="controls">
+                <select id="inshop_category" name="inshop_category"></select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="name">商品主图</label>
+            <div class="controls">
+                <input type="file"  name="thumb_img">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="old_price">原价</label>
+            <div class="controls">
+                <input type="text" name="old_price" id="old_price">（元）
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="new_price">现价</label>
+            <div class="controls">
+                <input type="text" name="new_price" id="new_price">（元）
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="info">详细信息</label>
+            <div class="controls">
+                <textarea id="info" name="info" style="width:700px;height:300px;"></textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="hidden" name="shopid" id="shopid" value="{$Think.session.shopid}" />
+                <button type="submit" class="btn">添加信息</button>
+            </div>
+        </div>
+    </form>
+
+</div> <!-- /container -->
+
+</body>
+<script type="text/javascript">
+    KE.show({
+        id : 'info' //TEXTAREA输入框的ID
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        var shopid = $('#shopid').val();
+        $.ajax({
+            url: "{:U(GROUP_NAME.'/Public/getGoodsCategoryList')}",
+            type:'post',
+            dataType:'json',
+            //data:{shopid:shopid},
+            success:function(data){
+                if(data.error == 0){
+                    data = data.list;
+                    var count=data.length;
+                    var _str = '';
+                    for(j=0;j< count; j++){
+                        _str +='<option value="'+data[j].id+'">'+data[j].html+data[j].name+'</option>';
+                    }
+                    $('#category').html(_str);
+                }
+            },
+            error:function(){
+                $("#tips").text("暂无法获取栏目数据");
+                $("#tips").fadeIn(2000);
+                $("#tips").fadeOut(2000);
+            }
+        });
+
+
+        $.ajax({
+            url: "{:U(GROUP_NAME.'/Public/getGoodsInshopCategoryList')}",
+            type:'post',
+            dataType:'json',
+            data:{shopid:shopid},
+            success:function(data){
+                if(data.error == 0){
+                    data = data.list;
+                    var count=data.length;
+                    var _str = '';
+                    for(j=0;j< count; j++){
+                        _str +='<option value="'+data[j].id+'">'+data[j].html+data[j].name+'</option>';
+                    }
+                    $('#inshop_category').html(_str);
+                }
+            },
+            error:function(){
+                $("#tips").text("暂无法获取栏目数据");
+                $("#tips").fadeIn(2000);
+                $("#tips").fadeOut(2000);
+            }
+        });
+
+
+    });
+
+</script>
+
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    map.centerAndZoom("秦皇岛",12);
+    map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+    map.addEventListener("click",function(e){
+        //alert(e.point.lng + "," + e.point.lat);
+        $("#point-x").val(e.point.lng);
+        $("#point-y").val(e.point.lat);
+    });
+
+
+</script>
+
+</html>

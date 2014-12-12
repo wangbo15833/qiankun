@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+{$Think.session.session_id}
+<volist name="list" id="vo">
+    {$vo.id}
+    {$vo.title}
+    {$vo.create_time|date="y-m-d",###}</br>
+</volist>
+{$page}
+</body>
+</html>

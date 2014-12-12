@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style" />
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal" action="__URL__/insert" method="post">
+        <h4 class="form-signin-heading">添加类目</h4>
+
+        <div class="control-group">
+            <label class="control-label" for="name">分类名称</label>
+            <div class="controls">
+                <input type="text" name="name">
+            </div>
+        </div>
+
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="hidden" name='pid' value="{$pid}">
+                <input type="submit" value="确定">
+                <input type="reset" value="重置">
+            </div>
+        </div>
+
+
+    </form>
+</div>
+</body>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url: "{:U(GROUP_NAME.'/Public/getGoodsCategoryList')}",
+            type:'post',
+            dataType:'json',
+            //data:{param_id:0},
+            success:function(data){
+                if(data.error == 0){
+                    data = data.list;
+                    var count=data.length;
+                    var _str = '';
+                    for(j=0;j< count; j++){
+                        _str +='<option value="'+data[j].id+'">'+data[j].html+data[j].name+'</option>';
+                    }
+                    $('#pid').append(_str);
+                }
+            }
+        });
+    });
+</script>
+</html>

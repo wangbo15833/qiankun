@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+
+    <load href="{:$Theme['P']['root']}/js/editor/kindeditor.js"/>
+    <js href="http://api.map.baidu.com/api?v=2.0&ak=D233382db800044ba5915ab2ffaae458" />
+
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal" action="__URL__/update" method="post">
+        <h4 class="form-signin-heading">资料编辑</h4>
+
+        <div class="control-group">
+            <label class="control-label" for="">分类</label>
+            <div class="controls">
+                <select id="category" name="category_id"></select>
+
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">店名</label>
+            <div class="controls">
+                <input type="text" name="shopname" value="{$shop['shopname']}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">电话</label>
+            <div class="controls">
+                <input type="text" name="phone" value="{$shop['phone']}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">地区</label>
+            <div class="controls">
+                <select id="province" name="province"><option value="">省</option></select>
+                <select id="city" name="city"><option value="">市</option></select>
+                <select id="area" name="area"><option value="">--区、县</option></select>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">地址</label>
+            <div class="controls">
+                <input type="text" id="address" name="address" value="{$shop['address']}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">百度地图</label>
+            <div class="controls">
+                <div id="allmap" style="height:400px"></div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">坐标</label>
+            <div class="controls">
+                <input type="text" id="point-x" name="point_x" placeholder="横坐标" value="{$shop['point_x']}">
+                <input type="text" id="point-y" name="point_y" placeholder="纵坐标" value="{$shop['point_y']}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="">详细信息</label>
+            <div class="controls">
+                <textarea id="info" name="info" style="width:700px;height:300px;">{$shop['info']}</textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <input name="id" type="hidden" value="{$shop['id']}"/>
+                <button type="submit" class="btn">确认修改</button>
+            </div>
+        </div>
+    </form>
+
+</div> <!-- /container -->
+
+</body>
+<script type="text/javascript">
+    KE.show({
+        id : 'info' //TEXTAREA输入框的ID
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            url: "{:U('Seller/Public/getAreaByPid')}",
+            type:'post',
+            dataType:'json',
+            data:{param_id:0},
+            success:function(data){
+                if(data.error == 0){
+                    data = data.areas;
+                    var count=data.length;
+                    var _str = '';
+                    for(j=0;j< count; j++){
+                        _str +='<option value="'+data[j].id+'"';
+                        if(data[j]['id'] == <?php echo $shop['province'];?>){
+                            _str += 'selected="selected"';
+                        }
+                        _str +='>'+data[j].name+'</option>';
+                    }
+                    $('#province').append(_str);
+                }
+                var provinceid = $('#province').val();
+                $.ajax({
+                    url: "{:U('Seller/Public/getAreaByPid')}",
+                    type:'post',
+                    dataType:'json',
+                    data:{param_id:provinceid},
+                    success:function(data){
+                        if(data.error == 0){
+                            data = data.areas;
+                            var count=data.length;
+                            var _str = '';
+                            for(j=0;j< count; j++){
+                                _str +='<option value="'+data[j].id+'"';
+                                if(data[j]['id'] == <?php echo $shop['city'];?>){
+                                    _str += 'selected="selected"';
+                                }
+                                _str +='>'+data[j].name+'</option>';
+                            }
+                            $('#city').append(_str);
+                        }
+                        var cityid =$('#city').val();
+                        $.ajax({
+                            url: "{:U('Seller/Public/getAreaByPid')}",
+                            type:'post',
+                            dataType:'json',
+                            data:{param_id:cityid},
+                            success:function(data){
+                                if(data.error == 0){
+                                    data = data.areas;
+                                    var count=data.length;
+                                    var _str = '';
+                                    for(j=0;j< count; j++){
+                                        _str +='<option value="'+data[j].id+'"';
+                                        if(data[j]['id'] == <?php echo $shop['area'];?>){
+                                            _str += 'selected="selected"';
+                                        }
+                                        _str +='>'+data[j].name+'</option>';
+                                    }
+                                    $('#area').append(_str);
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+        $.ajax({
+            url: "{:U(GROUP_NAME.'/Public/getShopCategoryList')}",
+            type:'get',
+            dataType:'json',
+            data:{channel:1},
+            success:function(data){
+                if(data.error == 0){
+                    data = data.list;
+                    var count=data.length;
+                    var _str = '';
+                    for(j=0;j< count; j++){
+                        _str +='<option value="'+data[j].id+'"';
+                        if(data[j]['id'] == <?php echo $shop['category_id'];?>){
+                            _str += 'selected="selected"';
+                        }
+                        _str +='>'+data[j].html+data[j].name+'</option>';
+                    }
+                    $('#category').append(_str);
+                }
+            }
+        });
+
+        $('#province').change(function() {
+            var pid = $('#province').val();
+            $.ajax({
+                url: "{:U('Seller/Public/getAreaByPid')}",
+                type:'post',
+                dataType:'json',
+                data:{param_id:pid},
+                success:function(data){
+                    if(data.error == 0){
+                        data = data.areas;
+                        var count=data.length;
+                        var _str = '';
+                        for(j=0;j< count; j++){
+                            _str +='<option value="'+data[j].id+'">'+data[j].name+'</option>';
+                        }
+                        $('#city').html(_str);
+                    }
+                }
+            })
+        });
+
+        $('#city').change(function() {
+            var pid = $('#city').val();
+            $.ajax({
+                url: "{:U('Seller/Public/getAreaByPid')}",
+                type:'post',
+                dataType:'json',
+                data:{param_id:pid},
+                success:function(data){
+                    if(data.error == 0){
+                        data = data.areas;
+                        var count=data.length;
+                        var _str = '';
+                        for(j=0;j< count; j++){
+                            _str +='<option value="'+data[j].id+'">'+data[j].name+'</option>';
+                        }
+                        $('#area').html(_str);
+                    }
+                }
+            });
+        });
+
+
+        $('#address').change(function() {
+            var addr = $('#address').val();
+            var city = $('#city option:selected').text();
+            var s_city = "秦皇岛";
+
+            //var map = new BMap.Map("allmap");
+            var myGeo = new BMap.Geocoder();
+            // 将地址解析结果显示在地图上，并调整地图视野
+            myGeo.getPoint(addr, function(point){
+                if (point) {
+                    map.centerAndZoom(point, 16);
+                    map.addOverlay(new BMap.Marker(point));
+
+                    //添加地图覆盖物
+                    var opts = {
+                        width : 70,     // 信息窗口宽度
+                        height: 50,     // 信息窗口高度
+                        title : addr  // 信息窗口标题
+                    }
+                    var infoWindow = new BMap.InfoWindow("", opts);  // 创建信息窗口对象
+                    map.openInfoWindow(infoWindow, point);      // 打开信息窗口
+                }
+            }, s_city);
+
+        });
+
+
+    });
+
+</script>
+
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    map.centerAndZoom("秦皇岛",12);
+    map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+    map.addEventListener("click",function(e){
+        //alert(e.point.lng + "," + e.point.lat);
+        $("#point-x").val(e.point.lng);
+        $("#point-y").val(e.point.lat);
+    });
+
+
+</script>
+
+</html>

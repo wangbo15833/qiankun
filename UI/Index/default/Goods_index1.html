@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+Hello World!
+<a href="{$area_all}">全部</a>&nbsp;&nbsp;
+<volist name="areas" id="vo">
+    <a href="{$vo.url}">{$vo.dname}</a>&nbsp;&nbsp;
+</volist>
+<br/>
+<a href="{$goods_category_all}">全部</a>&nbsp;&nbsp;
+<volist name="goods_category_list" id="vo">
+    <a href="{$vo.url}">{$vo.name}</a>&nbsp;&nbsp;
+</volist>
+<volist name="goods" id="vo">
+    {$vo.name}<br/>
+</volist>
+
+<br/>
+{$page}
+</body>
+</html>

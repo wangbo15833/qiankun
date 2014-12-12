@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal" name="login" action="__URL__/change/" method="post">
+        <legend>编辑资料</legend>
+        <div class="control-group">
+            <label class="control-label" for="nickname">昵称：</label>
+            <div class="controls">
+                <input name="nickname" type="text" id="nickname" value="{$vo.nickname}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="email">Email：</label>
+            <div class="controls">
+                <input name="email" type="text" id="email" value="{$vo.email}">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="remark">备注：</label>
+            <div class="controls">
+                <textarea name="remark" id="remark" rows="5" cols="57">{$vo.remark}</textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="hidden" name="id" value="{$vo.id}">
+                <button type="submit" class="btn">确认</button>
+                <button type="reset" class="btn">取消</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

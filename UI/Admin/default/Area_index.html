@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <include file="Pub:style"/>
+</head>
+<body>
+<div class="container">
+    <a href="__URL__/index/pid/{$pid|getGoodsCategoryParentID}">返回上级</a>
+    <a href="__URL__/add/pid/{$pid}">添加地区</a>
+    <table class="table table-striped">
+        <tr>
+            <td>ID</td>
+            <td>名称</td>
+            <td>类别</td>
+            <td>操作</td>
+        </tr>
+        <volist name="list" id="vo">
+            <tr>
+                <td>{$vo.id}</td>
+                <td><a href="__URL__/index/pid/{$vo.id}">{$vo.name}</a></td>
+                <td>{$vo.type|getAreaType}</td>
+                <td><a class="btn btn-primary" href="__URL__/edit/id/{$vo.id}">编辑</a>
+                    <a class="btn btn-danger" href="__URL__/foreverdelete/id/{$vo.id}">删除</a>
+                </td>
+            </tr>
+        </volist>
+    </table>
+</div>
+</body>
+</html>
