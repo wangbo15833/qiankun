@@ -16,8 +16,14 @@ class OrdersAgedAction extends CommonAction{
                 if($Item['status']==1){
                     $Item['OrderButton']="<a class='btn btn-primary' href='/Seller/OrdersAged/deliver/id/".$Item['orderid']."'>发货</a>";
                 }
+                elseif($Item[status]==3){
+                    $Item['OrderButton']="等待收货";
+                }
                 elseif($Item['status']==4 && !$Item['shop_rate_id']){
                     $Item['OrderButton']="<a class='btn btn-primary' href='/Seller/OrdersRate/add/orderid/".$Item['orderid']."'>评价买家</a>";
+                }
+                elseif($Item['status']==4 && $Item['shop_rate_id']){
+                    $Item['OrderButton']="已评价";
                 }
 
             }
@@ -46,7 +52,7 @@ class OrdersAgedAction extends CommonAction{
     public function deliver(){
         $orderid=I('id');
         $db=M($this->tableName);
-        $result=$db->where('orderid='.$orderid)->setField('status',3);
+        $result=$db->where('orderid='.$orderid)->setField(array('status'=>3,'shopid'=>session('shopid')));
         if($result){
             $this->success("发货操作成功","__URL__/index");
         }

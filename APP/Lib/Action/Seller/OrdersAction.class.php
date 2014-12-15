@@ -26,10 +26,27 @@ class OrdersAction extends CommonAction{
         $new_list=array();
         foreach($list as $Item){
             if($Item['status']==1&&$Item['paytype']=='hdfk'){
-                $Item['OrderButton']="发货";
+                $Item['OrderButton']="<a class='btn btn-primary' href='/Seller/Orders/deliver/id/".$Item['orderid']."'>发货</a>";
                 $new_list[]=$Item;
             }
+
             elseif($Item['status']==1&&$Item['paytype']!='hdfk'){
+                $Item['OrderButton']="等待付款";
+                $new_list[]=$Item;
+            }
+            elseif($Item['status']==2){
+                $Item['OrderButton']="<a class='btn btn-primary' href='/Seller/Orders/deliver/id/".$Item['orderid']."'>发货</a>";
+                $new_list[]=$Item;
+            }
+            elseif($Item['status']==4&&!$Item['shop_rate_id']){
+                $Item['OrderButton']="<a class='btn btn-primary' href='/Seller/OrdersRate/add/orderid/".$Item['orderid']."'>评价买家</a>";
+                $new_list[]=$Item;
+            }
+            elseif($Item['status']==4&&$Item['shop_rate_id']){
+                $Item['OrderButton']="已评价";
+                $new_list[]=$Item;
+            }
+            else{
                 $new_list[]=$Item;
             }
 
@@ -40,4 +57,17 @@ class OrdersAction extends CommonAction{
         $this->display();
 
     }
+
+    public function deliver(){
+        $orderid=I('id');
+        $db=M($this->tableName);
+        $result=$db->where('orderid='.$orderid)->setField('status',3);
+        if($result){
+            $this->success("发货操作成功","__URL__/index");
+        }
+        else{
+            $this->error("发货操作失败","__URL__/index");
+        }
+    }
+
 }

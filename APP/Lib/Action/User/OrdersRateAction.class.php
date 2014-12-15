@@ -11,7 +11,10 @@ class OrdersRateAction extends CommonAction{
     protected $tableName="OrdersRate";
     public function add(){
         $orderid=I('orderid');
-        $this->assign("orderid",$orderid);
+        $db=M('Orders');
+        $result=$db->where('orderid='.$orderid)->find();
+
+        $this->assign("orders",$result);
         $this->display();
     }
 

@@ -30,7 +30,7 @@
             <td>{$vo.status|getOrderStatusName}</td>
             <td>{$vo.paytype|getPaytypeName}</td>
             <td>
-                <a class="btn btn-primary" href="__URL__/pay/id/{$vo.orderid}">{$vo.OrderButton}</a>
+                {$vo.OrderButton}
             </td>
         </tr>
     </volist>
