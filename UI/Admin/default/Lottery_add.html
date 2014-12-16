@@ -7,8 +7,12 @@
     <load href="{:$Theme['P']['root']}/Datepicker-for-Bootstrap-master/datepicker.css"/>
     <script type="text/javascript">
         $(function(){
-            $('#start_time').datepicker();
-            $('#end_time').datepicker();
+            $('#start_time').datepicker({
+                format: 'yyyy-mm-dd'
+            });
+            $('#end_time').datepicker({
+                format: 'yyyy-mm-dd'
+            });
         });
     </script>
 
@@ -27,9 +31,9 @@
         </div>
 
         <div class="control-group">
-            <label class="control-label" for="name">抽奖标题</label>
+            <label class="control-label" for="title">抽奖标题</label>
             <div class="controls">
-                <input type="text" name="name" id="name">
+                <input type="text" name="title" id="title">
             </div>
         </div>
 

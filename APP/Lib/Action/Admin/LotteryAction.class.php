@@ -22,6 +22,8 @@ class LotteryAction extends CommonAction{
     public function insert(){
         $db=D($this->tableName);
         $db->create();
+        $db->start_time=strtotime($_POST['start_time']);
+        $db->end_time=strtotime($_POST['end_time']);
         $info=$this->doUpload();
         if($info){
             $db->thumb_img=$info[0]['savename'];
@@ -56,6 +58,12 @@ class LotteryAction extends CommonAction{
 
     }
     public function detail(){
+
+    }
+
+    public function setNumber(){
+        $num=I('num');
+        $db=M($this->tableName);
 
     }
 }
