@@ -38,6 +38,10 @@ class OrdersAction extends CommonAction{
                 $Item['OrderButton']="<a class='btn btn-primary' href='/Seller/Orders/deliver/id/".$Item['orderid']."'>发货</a>";
                 $new_list[]=$Item;
             }
+            elseif($Item['status']==3){
+                $Item['OrderButton']="等待收货";
+                $new_list[]=$Item;
+            }
             elseif($Item['status']==4&&!$Item['shop_rate_id']){
                 $Item['OrderButton']="<a class='btn btn-primary' href='/Seller/OrdersRate/add/orderid/".$Item['orderid']."'>评价买家</a>";
                 $new_list[]=$Item;

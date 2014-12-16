@@ -10,7 +10,10 @@ class GoodsAction extends CommonAction{
     protected $tableName = 'Goods';
     public function index(){
         $db=M($this->tableName);
-        $list=$db->where('shopid='.session('shopid'))->order('add_time desc')->select();
+        $list=$db
+            ->where('shopid='.session('shopid'))
+            ->order('add_time desc')
+            ->select();
         $this->assign('list',$list);
         $this->display();
     }

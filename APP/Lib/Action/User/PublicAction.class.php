@@ -60,6 +60,7 @@ class PublicAction extends CommonAction{
                 $id	=	$node->where("name='".GROUP_NAME."' and pid=0")->getField('id');
                 $where['level']=2;
                 $where['status']=1;
+                $where['no_show']=0;
                 $where['pid']=$id;
                 $list	=	$node->where($where)->field('id,name,group_id,title')->order('sort asc')->select();
                 if(isset($_SESSION['_ACCESS_LIST'])) {
