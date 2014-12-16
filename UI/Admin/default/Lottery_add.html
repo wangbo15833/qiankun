@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style"/>
+    <load href="{:$Theme['P']['root']}/Datepicker-for-Bootstrap-master/bootstrap-datepicker.js"/>
+    <load href="{:$Theme['P']['root']}/Datepicker-for-Bootstrap-master/datepicker.css"/>
+    <script type="text/javascript">
+        $(function(){
+            $('#start_time').datepicker();
+            $('#end_time').datepicker();
+        });
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal" action="__URL__/insert" method="post" enctype="multipart/form-data">
+        <h4 class="form-signin-heading">添加抽奖活动</h4>
+
+        <div class="control-group">
+            <label class="control-label" for="start_time">活动时间</label>
+            <div class="controls">
+                <input type="text" name="start_time" id="start_time">
+                <input type="text" name="end_time" id="end_time">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="name">抽奖标题</label>
+            <div class="controls">
+                <input type="text" name="name" id="name">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="sub_title">副标题</label>
+            <div class="controls">
+                <textarea name="sub_title" id="sub_title"></textarea>
+            </div>
+        </div>
+
+
+        <div class="control-group">
+            <label class="control-label" for="name">商品主图</label>
+            <div class="controls">
+                <input type="file"  name="thumb_img">
+            </div>
+        </div>
+
+
+
+        <div class="control-group">
+            <label class="control-label" for="info">详细信息</label>
+            <div class="controls">
+                <textarea id="info" name="info" style="width:700px;height:300px;"></textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="hidden" name="shopid" id="shopid" value="{$Think.session.shopid}" />
+                <button type="submit" class="btn">添加信息</button>
+            </div>
+        </div>
+    </form>
+
+</div> <!-- /container -->
+
+</body>
+<script type="text/javascript">
+    KE.show({
+        id : 'info' //TEXTAREA输入框的ID
+    });
+</script>
+
+</html>
