@@ -63,7 +63,16 @@ class LotteryAction extends CommonAction{
 
     public function setNumber(){
         $num=I('num');
+        $lid=I('lid');
         $db=M($this->tableName);
+        $result=$db->where('id='.$lid)->setField('number',$num);
+        if($result){
+            $re['error']=0;
+        }
+        else{
+            $re['error']=1;
+        }
+        $this->ajaxReturn($re);
 
     }
 }

@@ -4,14 +4,25 @@
     <title></title>
     <include file="Pub:style"/>
     <script>
-
-        function setNumber(num){
-            alert(num);
-        }
-        $.setNumber=function(num){
-            alert(num);
-
-        }
+        $(document).ready(function(){
+            $(".setNum").click(function(){
+                var lid=$(this).attr("data-id");
+                var num=$(this).prev().val();
+                var obj=$(this);
+                $.ajax({
+                    url:"__URL__/setNumber",
+                    type:'get',
+                    dataType:'json',
+                    data:{num:num,lid:lid},
+                    success:function(data){
+                        if(data.error==0){
+                            obj.parent().parent().text(num);
+                            alert("设置成功");
+                        }
+                    }
+                });
+            });
+        });
     </script>
 </head>
 <body>
@@ -35,10 +46,14 @@
                 <td>{$vo.end_time|date="Y-m-d",###}</td>
 
                 <td>
-                    <div class="input-append">
-                        <input class="span2" id="lottery_number" type="text">
-                        <button class="btn" type="button"  onclick="setNumber({$vo.id});">Go!</button>
-                    </div>
+                    <empty name="vo.number">
+                        <div class="input-append">
+                                <input class="span2" id="lottery_number" type="text"/>
+                                <input class="btn setNum" type="button"  value="Go!" data-id="{$vo.id}"/>
+                        </div>
+                    <else/>
+                        {$vo.number}
+                    </empty>
                 </td>
                 <td>{$vo.add_time|date="Y-m-d",###}</td>
                 <td><a class="btn btn-primary" href="__URL__/edit/id/{$vo.id}">编辑</a>

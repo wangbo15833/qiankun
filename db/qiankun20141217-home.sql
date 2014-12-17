@@ -418,8 +418,8 @@ CREATE TABLE IF NOT EXISTS `qiankun_lottery` (
 -- 正在导出表  qiankun.qiankun_lottery 的数据：2 rows
 /*!40000 ALTER TABLE `qiankun_lottery` DISABLE KEYS */;
 INSERT INTO `qiankun_lottery` (`id`, `title`, `sub_title`, `thumb_img`, `status`, `info`, `start_time`, `end_time`, `add_time`, `number`) VALUES
-	(1, '', '抽奖啦', '549038870a8b1.jpg', 1, '抽奖测试抽奖测试抽奖测试抽奖测试抽奖测试抽奖测试抽奖测试抽奖测试', 12, 12, 1418737799, ''),
-	(2, '抽奖测试啦', '抽奖测试啦', '', 1, '抽奖测试啦抽奖测试啦抽奖测试啦抽奖测试啦抽奖测试啦抽奖测试啦抽奖测试啦', 1418659200, 1418745600, 1418738553, '');
+	(1, '', '抽奖啦', '549038870a8b1.jpg', 1, '抽奖测试抽奖测试抽奖测试抽奖测试抽奖测试抽奖测试抽奖测试抽奖测试', 12, 12, 1418737799, '7777'),
+	(2, '抽奖测试啦', '抽奖测试啦', '', 1, '抽奖测试啦抽奖测试啦抽奖测试啦抽奖测试啦抽奖测试啦抽奖测试啦抽奖测试啦', 1418659200, 1418745600, 1418738553, '5555');
 /*!40000 ALTER TABLE `qiankun_lottery` ENABLE KEYS */;
 
 
@@ -762,7 +762,7 @@ CREATE TABLE IF NOT EXISTS `qiankun_user` (
 -- 正在导出表  qiankun.qiankun_user 的数据：5 rows
 /*!40000 ALTER TABLE `qiankun_user` DISABLE KEYS */;
 INSERT INTO `qiankun_user` (`id`, `account`, `nickname`, `password`, `bind_account`, `last_login_time`, `last_login_ip`, `login_count`, `verify`, `email`, `phone`, `remark`, `create_time`, `update_time`, `status`, `type_id`, `info`) VALUES
-	(1, 'admin', '管理员1', '21232f297a57a5a743894a0e4a801fc3', '', 1418737436, '0.0.0.0', 1006, '8888', 'liu21st@gmail.com', '', '备注信息1', 1222907803, 1414741091, 1, 0, ''),
+	(1, 'admin', '管理员1', '21232f297a57a5a743894a0e4a801fc3', '', 1418807786, '127.0.0.1', 1007, '8888', 'liu21st@gmail.com', '', '备注信息1', 1222907803, 1414741091, 1, 0, ''),
 	(2, 'user', '会员用户', 'e10adc3949ba59abbe56e057f20f883e', '', 1415849831, '127.0.0.1', 139, '8888', '', '', '', 1239783735, 1415839587, 1, 0, ''),
 	(3, 'shop', '店主', 'e10adc3949ba59abbe56e057f20f883e', '', 1418718167, '127.0.0.1', 117, '', 'shop@abc.com', '', '哈哈哈', 1253514375, 1415758413, 1, 0, ''),
 	(4, 'agent', '代理商', 'e10adc3949ba59abbe56e057f20f883e', '', 1415781719, '127.0.0.1', 39, '', '', '', '领导', 1253514575, 1415778129, 1, 0, ''),

@@ -119,8 +119,8 @@
     <file path="/OrdersRateS2cAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418700499031" ignored="false" />
     <file path="/OrdersRateS2c_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418701152562" ignored="false" />
     <file path="/OrdersRateC2sAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418701554578" ignored="false" />
-    <file path="/LotteryAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418742087620" ignored="false" />
-    <file path="/Lottery_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418745625651" ignored="false" />
+    <file path="/LotteryAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418808907617" ignored="false" />
+    <file path="/Lottery_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418810077310" ignored="false" />
     <file path="/Lottery_add.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418737858965" ignored="false" />
     <file path="$PROJECT_DIR$/Runtime/Cache/Admin/14819aa21261d7c273adc9b18ee37c16.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418719627687" ignored="false" />
     <file path="/LotteryModel.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418720178859" ignored="false" />
@@ -137,122 +137,12 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="LotteryAction.class.php" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/LotteryAction.class.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="66" column="0" selection-start="1597" selection-end="1597" vertical-scroll-proportion="0.737931">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="qiankun" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Feedback_add.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Feedback_add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form_index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Form_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form_upload.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Form_upload.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Goods_detail.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Goods_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.464285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Goods_index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Goods_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="119.17857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Goods_index1.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Goods_index1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index_index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Index_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.571428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="News_index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/News_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Normal_index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Normal_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="266.89285">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Orders_index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/UI/Index/default/Orders_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="0" selection-start="3532" selection-end="3532" vertical-scroll-proportion="0.935743">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -291,8 +181,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="376" />
-    <option name="y" value="181" />
+    <option name="x" value="372" />
+    <option name="y" value="1005" />
     <option name="width" value="1270" />
     <option name="height" value="796" />
   </component>
@@ -322,6 +212,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -790,7 +681,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -881,14 +771,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="376" y="181" width="1270" height="796" extended-state="0" />
+    <frame x="372" y="1005" width="1270" height="796" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24954297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29221854" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3021523" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22029251" sideWeight="0.2862191" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -967,39 +857,24 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/UI/Seller/default/Goods_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="10.714286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UI/Seller/default/Goods_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="67.17857">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="67.17857" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Seller/default/Goods_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="90.78571">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="90.78571" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Index/default/Aged_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.8928572">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.8928572" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Index/default/City_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Index/default/Feedback_add.html">
@@ -1025,14 +900,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Index/default/Goods_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="26.464285">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Index/default/Goods_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="119.17857">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1046,7 +921,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Index/default/Index_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.571428">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1060,21 +935,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Index/default/Normal_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="266.89285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/Admin/default/Lottery_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="175" selection-end="175" vertical-scroll-proportion="0.29482758">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Index/default/Orders_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="3532" selection-end="3532" vertical-scroll-proportion="0.935743">
+        <state line="102" column="0" selection-start="3532" selection-end="3532" vertical-scroll-proportion="0.5255732">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Admin/default/Lottery_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="42" selection-start="690" selection-end="690" vertical-scroll-proportion="0.5144404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/LotteryAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="31" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.737931">
           <folding />
         </state>
       </provider>
