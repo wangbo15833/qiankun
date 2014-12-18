@@ -233,7 +233,7 @@ class CommonAction extends BaseAction{
                 $this->error('非法操作');
             }
         }
-        $this->forward();
+        //$this->forward();
     }
 
     public function clear() {

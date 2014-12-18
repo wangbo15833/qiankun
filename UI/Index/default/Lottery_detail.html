@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <include file="Pub:style"/>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#draw").click(function(){
+                var lotteryid=$(this).attr("myValue");
+                $.ajax({
+                    url:"__GROUP__/LotteryMap/insert",
+                    type:"post",
+                    dataType:'json',
+                    data:{lotteryid:lotteryid},
+                    success:function(data){
+                        if(data.error==0){
+                            alert("抽奖完成");
+                        }
+                        else{
+                            alert("您已参与本次抽奖啦！");
+                        }
+                    }
+                })
+            })
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    {$result.id}&nbsp;{$result.title}&nbsp;{$result.sub_title}<br/>
+    <a href="javascript:void(0);" id="draw" myValue="{$result.id}">立即抽奖</a>
+</div>
+</body>
+</html>

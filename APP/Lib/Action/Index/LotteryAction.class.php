@@ -17,4 +17,14 @@ class LotteryAction extends BaseAction{
         $this->assign('list',$list);
         $this->display();
     }
+
+    public function detail(){
+        $id=I('id');
+        $db=M($this->tableName);
+        $result=$db
+            ->where('id='.$id)
+            ->find();
+        $this->assign('result',$result);
+        $this->display();
+    }
 }
