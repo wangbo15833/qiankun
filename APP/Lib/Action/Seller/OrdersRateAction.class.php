@@ -34,6 +34,6 @@ class OrdersRateAction extends CommonAction{
     }
 
     public function index(){
-        echo "hello world";
+        $this->display();
     }
 }

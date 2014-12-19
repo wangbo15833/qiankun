@@ -11,7 +11,7 @@
     <file path="/mycss.css" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1417230932562" ignored="false" />
     <file path="/Index_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1417424643687" ignored="false" />
     <file path="/IndexAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1417080391734" ignored="false" />
-    <file path="/a.dummy" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1416880341562" ignored="false" />
+    <file path="/a.dummy" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418971460937" ignored="false" />
     <file path="/AdminAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1415756212968" ignored="false" />
     <file path="/Index_main.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1414560771093" ignored="false" />
     <file path="/Index_top.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1414564713406" ignored="false" />
@@ -31,7 +31,7 @@
     <file path="/Node_treeSelect.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1414657147359" ignored="false" />
     <file path="/Role_action.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1414656715531" ignored="false" />
     <file path="/Index_password.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1414658296125" ignored="false" />
-    <file path="/PublicAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418702569234" ignored="false" />
+    <file path="/PublicAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418972439328" ignored="false" />
     <file path="/Public_top.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1417061298843" ignored="false" />
     <file path="/GroupAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1414722097265" ignored="false" />
     <file path="/Role_add.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1414723664546" ignored="false" />
@@ -113,20 +113,25 @@
     <file path="/OrdersAged_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1417855823801" ignored="false" />
     <file path="/Dummy.txt" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418619315906" ignored="false" />
     <file path="/abc.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418619224703" ignored="false" />
-    <file path="/OrdersRateAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418696851750" ignored="false" />
+    <file path="/OrdersRateAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418971653171" ignored="false" />
     <file path="/OrdersRate_add.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418695668453" ignored="false" />
-    <file path="/OrdersRate_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418701939171" ignored="false" />
+    <file path="/OrdersRate_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418971593281" ignored="false" />
     <file path="/OrdersRateS2cAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418700499031" ignored="false" />
     <file path="/OrdersRateS2c_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418701152562" ignored="false" />
     <file path="/OrdersRateC2sAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418701554578" ignored="false" />
-    <file path="/LotteryAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418885458875" ignored="false" />
+    <file path="/LotteryAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418956464546" ignored="false" />
     <file path="/Lottery_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418885588921" ignored="false" />
     <file path="/Lottery_add.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418737858965" ignored="false" />
     <file path="$PROJECT_DIR$/Runtime/Cache/Admin/14819aa21261d7c273adc9b18ee37c16.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418719627687" ignored="false" />
     <file path="/LotteryModel.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418720178859" ignored="false" />
-    <file path="/Lottery_detail.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418892154437" ignored="false" />
+    <file path="/Lottery_detail.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418956720562" ignored="false" />
     <file path="/Pub_header.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418885749843" ignored="false" />
     <file path="/LotteryMapAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418887246531" ignored="false" />
+    <file path="/Lottery_result.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418956786296" ignored="false" />
+    <file path="/McardAction.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418972645140" ignored="false" />
+    <file path="/McardModel.class.php" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418960548968" ignored="false" />
+    <file path="/Mcard_index.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418973194359" ignored="false" />
+    <file path="/Mcard_add.html" changelist="43e38d2f-01ce-49fd-9d56-e1dfa768b3ce" time="1418961252046" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +150,64 @@
     <favorites_list name="qiankun" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="McardAction.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/McardAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="25" selection-start="428" selection-end="428" vertical-scroll-proportion="-10.178572">
+              <folding>
+                <element signature="e#6#169#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mcard_index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UI/User/default/Mcard_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="21" selection-start="445" selection-end="445" vertical-scroll-proportion="-9.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mcard_index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UI/Seller/default/Mcard_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="31" selection-start="165" selection-end="165" vertical-scroll-proportion="0.36803874">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonAction.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/CommonAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.107143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicAction.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/PublicAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="36" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-3.4339623">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicAction.class.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Seller/PublicAction.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="36" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-19.678572">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -163,30 +225,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/UI/User/default/OrdersRateC2s_index.html" />
-        <option value="$PROJECT_DIR$/UI/User/default/OrdersRateS2c_index.html" />
-        <option value="$PROJECT_DIR$/UI/User/default/OrdersRate_index.html" />
-        <option value="$PROJECT_DIR$/APP/Lib/Action/User/PublicAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Lib/Action/Index/GoodsAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Lib/Action/Seller/GoodsAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Lib/Model/Admin/LotteryModel.class.php" />
-        <option value="$PROJECT_DIR$/UI/Admin/default/Lottery_add.html" />
-        <option value="$PROJECT_DIR$/APP/Lib/Action/Admin/LotteryAction.class.php" />
-        <option value="$PROJECT_DIR$/UI/Admin/default/Lottery_index.html" />
-        <option value="$PROJECT_DIR$/APP/Lib/Action/Admin/CommonAction.class.php" />
-        <option value="$PROJECT_DIR$/APP/Lib/Action/Index/LotteryAction.class.php" />
-        <option value="$PROJECT_DIR$/UI/Index/default/Lottery_index.html" />
-        <option value="$PROJECT_DIR$/UI/Index/default/Pub_header.html" />
         <option value="$PROJECT_DIR$/APP/Lib/Action/Index/LotteryMapAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Lib/Action/Index/LotteryAction.class.php" />
         <option value="$PROJECT_DIR$/UI/Index/default/Lottery_detail.html" />
+        <option value="$PROJECT_DIR$/UI/Index/default/Lottery_result.html" />
+        <option value="$PROJECT_DIR$/APP/Lib/Model/Seller/McardModel.class.php" />
+        <option value="$PROJECT_DIR$/UI/Seller/default/Mcard_add.html" />
+        <option value="$PROJECT_DIR$/APP/Lib/Action/Seller/McardAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Lib/Action/Seller/OrdersRateS2cAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Lib/Action/Seller/OrdersRateC2sAction.class.php" />
+        <option value="$PROJECT_DIR$/UI/Seller/default/OrdersRate_index.html" />
+        <option value="$PROJECT_DIR$/APP/Lib/Action/Seller/OrdersRateAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Lib/Action/User/PublicAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Lib/Action/User/McardAction.class.php" />
+        <option value="$PROJECT_DIR$/APP/Lib/Action/Seller/PublicAction.class.php" />
+        <option value="$PROJECT_DIR$/UI/User/default/Mcard_index.html" />
+        <option value="$PROJECT_DIR$/UI/Seller/default/Mcard_index.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="342" />
-    <option name="y" value="26" />
-    <option name="width" value="738" />
+    <option name="x" value="102" />
+    <option name="y" value="33" />
+    <option name="width" value="1148" />
     <option name="height" value="640" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -301,46 +363,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="APP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -367,7 +389,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
+              <option name="myItemId" value="Action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiankun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiankun" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Action" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -393,102 +437,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Seller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Action" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -520,32 +468,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qiankun" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Action" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,14 +497,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\www_git\qiankun\UI\Admin\default" />
       <recent name="E:\www_git\qiankun\UI\User\default" />
       <recent name="E:\www_git\qiankun\UI\Seller\default" />
+      <recent name="E:\www_git\qiankun\UI\Admin\default" />
       <recent name="E:\WWW\qiankun\UI\Public\js" />
       <recent name="E:\WWW\qiankun\UI\Admin\default" />
     </key>
@@ -645,14 +567,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="342" y="26" width="738" height="640" extended-state="0" />
-    <editor active="false" />
+    <frame x="102" y="33" width="1148" height="640" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24954297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28947368" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32723948" sideWeight="0.6704981" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22029251" sideWeight="0.2862191" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -731,116 +653,122 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/UI/Admin/default/Lottery_index.html">
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Index/PayAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="42" selection-start="690" selection-end="690" vertical-scroll-proportion="0.5144404" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/ShopCategoryAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.13539192">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/LotteryAction.class.php">
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Seller/McardAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="31" selection-start="1827" selection-end="1827" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/GroupAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/FormAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/FeedbackAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/AreaAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Admin/CommonAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="31" selection-start="6881" selection-end="6886" vertical-scroll-proportion="-0.6785714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Index/IndexAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Index/GoodsAction.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="28.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/Index/default/Lottery_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="52" selection-start="146" selection-end="146" vertical-scroll-proportion="0.31591448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/Index/default/Pub_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="52" selection-start="11066" selection-end="11066" vertical-scroll-proportion="0.6745843">
+        <state line="26" column="103" selection-start="824" selection-end="824" vertical-scroll-proportion="-8.142858">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#6#170#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI/Seller/default/bootstrap_moban.html">
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/OrdersRateS2cAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="312" vertical-scroll-proportion="-0.0">
+        <state line="0" column="0" selection-start="0" selection-end="848" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Index/LotteryAction.class.php">
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Seller/OrdersRateS2cAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="714" selection-end="714" vertical-scroll-proportion="-11.964286">
+        <state line="17" column="50" selection-start="539" selection-end="539" vertical-scroll-proportion="0.3877551">
+          <folding>
+            <element signature="e#6#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/OrdersRateC2sAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="848" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Index/LotteryMapAction.class.php">
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Seller/OrdersRateC2sAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="303" selection-end="312" vertical-scroll-proportion="-6.464286">
+        <state line="17" column="50" selection-start="539" selection-end="539" vertical-scroll-proportion="0.7820823">
+          <folding>
+            <element signature="e#6#170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Seller/default/OrdersRateC2s_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.13801453">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Seller/default/OrdersRate_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="33" selection-start="502" selection-end="502" vertical-scroll-proportion="0.51">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/OrdersRateAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.321428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Seller/OrdersRateAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="25" selection-start="942" selection-end="942" vertical-scroll-proportion="0.6122449">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/CommonAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="6.107143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/McardAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="428" selection-end="428" vertical-scroll-proportion="-10.178572">
           <folding>
             <element signature="e#6#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI/Index/default/Lottery_detail.html">
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/Seller/PublicAction.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="693" selection-end="693" vertical-scroll-proportion="0.71">
+        <state line="62" column="36" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-19.678572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APP/Lib/Action/User/PublicAction.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="36" selection-start="1725" selection-end="1725" vertical-scroll-proportion="-3.4339623">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/User/default/Mcard_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="21" selection-start="445" selection-end="445" vertical-scroll-proportion="-9.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Seller/default/Mcard_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="165" selection-end="165" vertical-scroll-proportion="0.36803874">
           <folding />
         </state>
       </provider>

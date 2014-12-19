@@ -27,4 +27,21 @@ class LotteryAction extends BaseAction{
         $this->assign('result',$result);
         $this->display();
     }
+
+    public function result(){
+        $id=I('id');
+        $db=M($this->tableName);
+        $lottery_num=$db->where('id='.$id)->getField('number');
+        $db1=M('LotteryMap');
+        $res=$db1->where('lotteryid='.$id)->select();
+        $new_res=array();
+        foreach($res as $Item){
+            if($Item['number']==$lottery_num){
+                $new_res[]=$Item;
+            }
+        }
+
+        $this->assign('luckyman',$new_res);
+        $this->display();
+    }
 }

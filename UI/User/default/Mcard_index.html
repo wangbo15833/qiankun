@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <include file="Pub:style"/>
+</head>
+<body>
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <td>二维码</td>
+            <td>会员电话</td>
+            <td>积分</td>
+            <td>添加时间</td>
+
+        </tr>
+        <volist name="list" id="vo">
+            <tr>
+                <td>
+                    <img src="/{$vo.qrurl}"/>
+                </td>
+                <td>{$vo.tel}</td>
+                <td>{$vo.jf}</td>
+                <td>{$vo.add_time|date="Y-m-d",###}</td>
+
+            </tr>
+        </volist>
+    </table>
+</div>
+</body>
+</html>

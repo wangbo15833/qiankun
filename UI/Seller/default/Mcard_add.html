@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{:C('WEB_NAME')}</title>
+    <include file="Pub:style" />
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal" action="__URL__/insert" method="post">
+        <h4 class="form-signin-heading">添加会员卡</h4>
+
+        <div class="control-group">
+            <label class="control-label" for="tel">会员电话</label>
+            <div class="controls">
+                <input type="text" name="tel" id="tel">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="controls">
+                <input type="submit" value="确定">
+                <input type="reset" value="重置">
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

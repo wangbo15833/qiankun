@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <include file="Pub:style"/>
+</head>
+<body>
+            <table class="table">
+                <tr>
+                    <th>内容</th>
+                    <th>评价人</th>
+                    <th>商品信息</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>哈哈哈</td>
+                    <td>哈哈哈</td>
+                    <td>哈哈哈</td>
+                    <td>哈哈哈</td>
+                </tr>
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>{$vo.ODR_info}</td>
+                        <td>{$vo.shopname}</td>
+                        <td>
+                            <empty name="vo.name">{$vo.O_info}</empty>
+                            {$vo.name}
+                        </td>
+                        <td>操作</td>
+                    </tr>
+
+                </volist>
+            </table>
+
+</body>
+</html>
