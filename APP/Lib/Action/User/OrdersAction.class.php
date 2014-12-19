@@ -19,7 +19,7 @@ class OrdersAction extends CommonAction{
             ->join(C('DB_PREFIX')."goods G ON O.goodsid=G.id")
             ->where('O.userid='.$_SESSION[C('USER_AUTH_KEY')])
             ->field('*,O.status as status,O.info as info')
-            ->order('O.create_time')
+            ->order('O.create_time desc')
             ->limit($Page->firstRow.','.$Page->listRows)->select();
 
         $new_list=array();
@@ -66,7 +66,11 @@ class OrdersAction extends CommonAction{
         $orderid=I('id');
         $db=M('Orders');
         $result=$db->where("orderid=".$orderid)->setField('status',4);
-        if($result){
+        $orders=$db->where("orderid=".$orderid)->find();
+        $jf=floor($orders['amount']);
+        $db1=M('Mcard');
+        $result1=$db1->where("tel=".$orders['phone']." and shopid=".$orders['shopid'])->setInc('jf',$jf);
+        if($result&&$result1){
             $this->success("确认成功","__URL__/index");
         }
         else{

@@ -23,7 +23,12 @@ class OrdersAction extends BaseAction{
         $result=$db->where('id='.cookie('goodsid'))->find();
         $amount=$result['new_price']*cookie('goods_num');
 
+        $db1=M('UserExpand');
+        $address=$db1->where("userid=".session(C('USER_AUTH_KEY')))->getField('address');
 
+
+
+        $this->assign('address',$address);
         $this->assign('amount',$amount);
         $this->assign('goods',$result);
         $this->assign('orderID',$orderID);
