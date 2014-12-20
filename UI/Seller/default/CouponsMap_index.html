@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title></title>
+    <include file="Pub:style"/>
+</head>
+<body>
+<div class="container">
+    <form action="__URL__/index2" method="post">
+        <ul>
+            <volist name="userlist" id="vo">
+                <li><input type="checkbox" name="userlist[]" value="{$vo.id}">{$vo.account}</li>
+            </volist>
+        </ul>
+        <select name="coupons">
+            <option>选择电子券</option>
+            <volist name="couponslist" id="vo">
+                <option value="{$vo.id}">{$vo.title}</option>
+            </volist>
+        </select>
+        <input type="submit"/>
+
+    </form>
+
+</div>
+</body>
+</html>
